@@ -18,8 +18,8 @@ int main(void)
 	if (s > 5)
 		printf("Last Digit of %d is %d greater than 5\n", n, s);
 	else if (s == 0)
-		printf("Last Digit of %d is %d and  is 0\n", n, s);
+		printf("Last Digit of %d is %d and is 0\n", n, s);
 	else
-		printf("Last Digit of %d is %d and  is less than 6 and not 0\n", n, s);
+		printf("Last Digit of %d is %d and is less than 6 and not 0\n", n, s);
 	return (0);
 }
