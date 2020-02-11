@@ -2,7 +2,7 @@
 #include "holberton.h"
 
 /**
- * print_to_98 - add an integer to an other
+ * print_to_98 - print integers from n to 98
  * @n: integer
  *
  * Return:  98
@@ -22,5 +22,5 @@ else
 	n--;
 }
 }
-printf("%d, ", n);
+printf("%d\n", n);
 }
