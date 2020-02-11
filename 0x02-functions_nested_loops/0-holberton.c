@@ -7,7 +7,6 @@
 int main(void)
 {
 
-
 _putchar('H');
 _putchar('o');
 _putchar('l');
@@ -21,5 +20,5 @@ _putchar('n');
 _putchar('\n');
 
 
-return (0);
+
 }
