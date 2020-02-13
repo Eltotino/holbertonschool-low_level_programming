@@ -24,9 +24,9 @@ else if (b % 5 == 0)
 				printf("Buzz ");
 			}
 else 
-				printf("%d ", b);
-
+	printf("%d ", b);
 	}
-	printf("Buzz\n");
+
+	printf("\n");
 	return (0);
 }
