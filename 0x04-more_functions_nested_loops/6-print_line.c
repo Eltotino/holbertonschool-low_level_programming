@@ -19,5 +19,8 @@ int b;
 		_putchar('\n');
 
 	}
+	else
+	{
 	_putchar('\n');
+}
 }
