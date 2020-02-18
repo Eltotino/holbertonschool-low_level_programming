@@ -3,7 +3,6 @@
 * _puts - string length
 *
 *@str: pointer
-*@i:integer
 * Return : string length
 */
 void _puts(char *str)
