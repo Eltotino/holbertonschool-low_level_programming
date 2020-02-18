@@ -15,7 +15,7 @@ for (i = 0; str[i] != '\0'; i++)
 
 if (i % 2 == 0)
 (j = i / 2);
-else 
+else
 	j = i - ((i - 1) / 2);
 
 while (j != i)
