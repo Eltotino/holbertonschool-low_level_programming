@@ -1,12 +1,11 @@
 #include "holberton.h"
-#include <stdio.h>
 
 /**
 * _strcpy - copies a string
 *
-*
-*
-* Return : arrays
+*@dest : pointer
+*@src : pointer
+*Return: string
 */
 char *_strcpy(char *dest, char *src)
 {
@@ -16,8 +15,6 @@ int i;
 	{
 	dest[i] = src[i];
 }
-	i++;
-	dest[i] = '\0';
 
 return (dest);
 }
