@@ -26,6 +26,5 @@ for (k = 0; k < n; k++)
 		}
 
 }
-
 return (dest);
 }
