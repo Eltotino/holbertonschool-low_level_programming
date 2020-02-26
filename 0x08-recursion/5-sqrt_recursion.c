@@ -1,7 +1,7 @@
 /**
  * _natural_sqrt - check if a has natural square
- * @x: int
- * @y: int
+ * @i: int
+ * @n: int
  * Return: return success
  */
 int _natural_sqrt(int i, int n)
