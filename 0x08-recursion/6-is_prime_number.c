@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * _prime- Increments i to test if prime can be divided by it
- * @i: The number to divide prime by
+ * @x: The number to divide prime by
  * @prime: The number to check against count
  *
  * Return: 1 if the number is prime, 0 otherwise.
