@@ -1,31 +1,39 @@
 #include "holberton.h"
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 /**
- *str_concat - concatenates two strings.
- *@s1 : char
- *@s2 : char
- *Return: char
- */
+ * **alloc_grid - function to allocate memory to grid
+ * @width: int type
+ * @height: int type
+ * Return: pointer
+*/
 int **alloc_grid(int width, int height)
 {
-int **array;
-int i = 0, j = 0;
+int i, j;
+int **p;
 if (width <= 0 || height <= 0)
-return (NULL);
-
-array = malloc((width * height) * sizeof(int));
-if (*array == NULL)
-return (NULL);
-for (i = 0; i <= height; i++)
 {
-for(j = 0; j <= width; j++)
+return  (NULL);
+}
+p = malloc(height * sizeof(int *));
+if (p == NULL)
 {
-*array = 0;
+return (NULL);
+}
+for (i = 0; i < height; i++)
+{
+p[i] = malloc(width * sizeof(int));
+if (p[i] == NULL)
+{
+for (j = 0; j < i;  j++)
+free(p[j]);
+free(p);
+return (NULL);
+}
+for (j = 0; j < width; j++)
+{
+p[i][j] = 0;
 }
 }
-array [j] = '\0';
-
-return (array);
-
+return (p);
 }
