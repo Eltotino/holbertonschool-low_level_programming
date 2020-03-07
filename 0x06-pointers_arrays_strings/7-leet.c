@@ -14,12 +14,14 @@ char *leet(char *s)
 	char b[] = {52, 52, 51, 51, 55, 55, 48, 48, 49, 49};
 while (s[i] != '\0')
 	{
-for (j = 0; j < 10; j++)
-	if (s[i] == a[j])
-	{
-		s[i] = b[j];
+		for (j = 0; j < 10; j++)
+		{
+			if (s[i] == a[j])
+			{
+				s[i] = b[j];
+			}
+			i++;
+		}
 	}
-	i++;
-}
 	return (s);
 }

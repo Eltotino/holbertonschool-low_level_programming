@@ -12,7 +12,7 @@ char *cap_string(char *s)
 	int i = 0, j;
 
 	for (i = 0; s[i] != '\0'; i++)
-		;
+		continue;
 	for (j = 0; s[j] != '\0'; j++)
 	{
 		if (j == 0)
@@ -23,7 +23,8 @@ char *cap_string(char *s)
 			}
 		}
 		if (s[j] == '\n' || s[j] == '\t' || s[j] == ' '
-			|| s[j] == '.' || s[j] == ',' || s[j] == '!'
+			|| s[j] == '.'
+			 || s[j] == ',' || s[j] == '!'
 			|| s[j] == '?' || s[j] == '"' || s[j] == '('
 			|| s[j] == ')' || s[j] == '{' || s[j] == '}')
 	{
