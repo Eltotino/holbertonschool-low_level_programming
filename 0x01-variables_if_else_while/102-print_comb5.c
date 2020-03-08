@@ -2,12 +2,10 @@
 #include <stdlib.h>
 #include <time.h>
 
-/*
-*Main :Entry point
+/**
+* main - Entry point
 *
-*@n : integer
-*@m: integer
-* Return : 0 Always SUCCESS
+* Return: Always 0 (SUCCESS)
 */
 
 int main(void)
@@ -26,11 +24,12 @@ int main(void)
 			putchar(o % 10 + '0');
 
 	if (n != 98 || o != 99)
-	{	putchar(',');
+	{
+		putchar(',');
 		putchar(' ');
 }
 }
 }
 	putchar('\n');
-		return (0);
+	return (0);
 }
