@@ -1,5 +1,5 @@
 #include "holberton.h"
-
+#include <stdio.h>
 /**
  * main- fizzbuzz game
  *
@@ -20,13 +20,19 @@ else if (b % 3 == 0)
 				printf("Fizz ");
 			}
 else if (b % 5 == 0)
-			{
+			
+		{			
+			if (b == 100)
+				
+					printf("Buzz");
+					else 
 				printf("Buzz ");
-			}
+		}
+			
 else 
 	printf("%d ", b);
 	}
 
-	printf("\n");
+	putchar('\n');
 	return (0);
 }
