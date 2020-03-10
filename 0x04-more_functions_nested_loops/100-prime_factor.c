@@ -1,9 +1,9 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
- * print_tr - triangles
+ * main - prints the largest prime factor of the numbe
  *
- *@size: integer
+ *
  * Return: Always 0.
  */
 int main(void)
@@ -15,10 +15,9 @@ int main(void)
 	for (i = 2; i <= 782849; i++)
 	{
 		while (x % i == 0)
-			{
-				x = x / i;
-
-			}
+		{
+			x = x / i;
+		}
 	}
 	printf("%ld\n", x);
 	return (0);
