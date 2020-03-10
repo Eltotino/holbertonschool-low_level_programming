@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-* isupper - check for upper case characters
+* _isupper - check for upper case characters
 *
 * Return: Always 0 (Success)
 *@c: integer
