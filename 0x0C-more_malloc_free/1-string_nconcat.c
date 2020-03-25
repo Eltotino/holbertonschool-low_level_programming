@@ -27,7 +27,7 @@ else
 		;
 }
 
-if (j > n)
+if (n > j)
 
 	j = n;
 
