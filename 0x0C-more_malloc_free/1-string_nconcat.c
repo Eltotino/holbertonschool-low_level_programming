@@ -27,7 +27,7 @@ else
 		;
 }
 
-if (n > j)
+if (j > n)
 
 	j = n;
 
@@ -40,9 +40,10 @@ for (k = 0;  k < i; k++)
 {
 	c[k] = s1[k];
 }
-for (k = 0; k < n; k++)
-
+for (k = 0; k < j; k++)
+{
 	c[k + i] = s2[k];
+}
 
 c[n + i] = '\0';
 return (c);
