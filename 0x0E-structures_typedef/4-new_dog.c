@@ -1,7 +1,7 @@
 #include "dog.h"
 #include <stdlib.h>
 /**
-* new_dog - create a new dog 
+* new_dog - create a new dog
 * @name: char
 * @age :float
 * @owner : char
@@ -9,7 +9,7 @@
 */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	int i, j, k ,l;
+	int i, j, k, l;
 	char *x, *y;
 	dog_t *new;
 
@@ -39,8 +39,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(x);
 		return (NULL);
 	}
-	for (l = 0; l <= j; l++)
-		
+		for (l = 0; l <= j; l++)
+
 			y[l] = owner[l];
 
 	new->name = x;
