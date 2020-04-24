@@ -2,7 +2,7 @@
 /**
 *print_numbers - print numbers
 *@separator: separate numbers
-*@n; amount of number to print 
+*@n: amount of number to print 
 */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
