@@ -22,8 +22,7 @@ void string(va_list lista)
 
 	if (string == NULL)
 	{
-		printf("(nil)");
-		return;
+		string = "(nil)";
 	}
 	printf("%s", string);
 }
@@ -57,29 +56,34 @@ void print_all(const char * const format, ...)
 {
 	int i, j;
 
-	i = 0;
 	j = 0;
-
+	char *separator = "";
 	va_list lista;
 
 	listall list[] = {
 		{"c", character},
-		{"i", integer},
 		{"s", string},
+		{"i", integer},
 		{"f", floats},
+		{NULL, NULL},
+		
 	};
 	va_start(lista, format);
 
-	while (j < 4)
-	{
-		while (format[i] != '\0')
+	i = 0;
+		while (format[i] != '\0' && format != NULL)
 		{
+			while (list[j].letter != NULL)
+			{
 			if (format[i] == *(list[j].letter))
-				list[j].fct(lista);
-			i++;
+				printf("%s", separator);
+			list[j].fct(lista);
+			separator = ",";
+			j++;
 		}
-		j++;
+		i++;
+		
 	}
-va_end(lista);
-printf("\n");
+	printf("\n");
+	va_end(lista);
 }
