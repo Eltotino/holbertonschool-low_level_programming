@@ -21,6 +21,6 @@ unsigned int binary_to_uint(const char *b)
 		if (b[i] == '1')
 			j = j ^ 1;
 	}
-	return(j);
+	return (j);
 
 }
