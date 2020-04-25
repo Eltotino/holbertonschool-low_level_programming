@@ -66,7 +66,6 @@ void print_all(const char * const format, ...)
 		{"i", integer},
 		{"f", floats},
 		{NULL, NULL},
-		
 	};
 	va_start(lista, format);
 
@@ -82,7 +81,7 @@ void print_all(const char * const format, ...)
 			j++;
 		}
 		i++;
-		
+
 	}
 	printf("\n");
 	va_end(lista);
