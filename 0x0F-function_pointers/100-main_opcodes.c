@@ -11,14 +11,14 @@ void main(int argc, char *argv[])
 	int i, n;
 	char *code;
 
-	if (argc != 2)
+		if (argc != 2)
 		{
 			printf("Error\n");
 			exit(1);
 				}
 	n = atoi(argv[1]);
 
-	if (argv[1] < 0)
+		if (n < 0)
 		{
 			printf("Error\n");
 			exit(2);
@@ -28,7 +28,7 @@ void main(int argc, char *argv[])
 		{
 
 			printf("%02x", code[i] & 0xFF);
-			if(i != n -1)
+			if (i != n - 1)
 				printf(" ");
 		}
 		printf("\n");
