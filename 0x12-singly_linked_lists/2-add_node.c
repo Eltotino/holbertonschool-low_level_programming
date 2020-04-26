@@ -21,11 +21,6 @@ list_t *add_node(list_t **head, const char *str)
 	if (new == NULL)
 		return (NULL);
 
-	if (new->str == NULL)
-	{
-		free (new);
-		return(NULL);
-	}
 
 	if (*head == NULL)
 		return (NULL);
