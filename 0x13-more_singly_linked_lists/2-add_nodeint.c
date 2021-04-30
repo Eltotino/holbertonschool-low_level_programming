@@ -18,7 +18,9 @@ new->next = *head;
 *head = new;
 
 if (new == NULL)
+{
 return (NULL);
+}
 
 return (new);
 }
