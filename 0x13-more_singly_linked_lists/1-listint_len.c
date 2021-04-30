@@ -3,7 +3,8 @@
 #include <stdlib.h>
 /**
 *listint_len - returns lenghth of list
-*@h : pointer to list
+*@h: pointer to list
+*
 *Return :  length of list
 */
 size_t listint_len(const listint_t *h)
