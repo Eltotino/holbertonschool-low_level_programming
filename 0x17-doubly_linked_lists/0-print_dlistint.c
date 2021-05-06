@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
-*print_listint - returns number of nodes in list
+*print_ldistint - returns number of nodes in list
 *@h: pointer to the list
 *
 * Return:  number of elements
