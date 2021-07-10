@@ -2,7 +2,7 @@
 /**
 * linear_search - linear search
 * @array: pointer to first element of list
-* @size: size of array 
+* @size: size of array
 * @value: value searched
 *
 * Return: first index where to find the value
