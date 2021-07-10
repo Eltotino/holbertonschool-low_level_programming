@@ -1,6 +1,6 @@
 #include "search_algos.h"
 /**
- * jump_search - jump search 
+ * jump_search - jump search
  * @array: pointer to first element of searched list
  * @size: size of array
  * @value: value to search for
