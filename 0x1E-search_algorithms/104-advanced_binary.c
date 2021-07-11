@@ -23,7 +23,7 @@ void print_array(int *array, size_t first, size_t last)
  * advanced_search - Middle process
  *
  * @array: array
- * @start: index  of first element
+ * @begin: index  of first element
  * @end: number of elements in array
  * @value: value to search for
  *
