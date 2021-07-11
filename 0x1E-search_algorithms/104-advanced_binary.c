@@ -20,7 +20,7 @@ void print_array(int *array, size_t first, size_t last)
 }
 
 /**
- * advanced_binary_search - Middle process
+ * advanced_search - Middle process
  *
  * @array: array
  * @start: index  of first element
