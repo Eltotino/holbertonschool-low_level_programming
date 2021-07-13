@@ -1,53 +1,53 @@
 #include "search_algos.h"
 
 /**
- * linear_skip - Search value in list.
+ * linear_skip - Searches for a value in a list.
  *
- * @list: pointer to list head.
+ * @list: a pointer to the list head.
  * @value: searched value.
  *
- * Return: pointer to first node where value is located
+ * Return: a pointer to the first node where value is located or NULL
  */
 
 skiplist_t *linear_skip(skiplist_t *list, int value)
 {
-	skiplist_t *spot, *prev;
+	skiplist_t *Current, *Previous;
 
 	if (!list)
 		return (NULL);
 
-	spot = list;
-	while (spot->next && spot->n < value)
+	Current = list;
+	while (Current->next && Current->n < value)
 	{
-		prev = spot;
-		if (spot->express)
-			spot = spot->express;
+		Previous = Current;
+		if (Current->express)
+			Current = Current->express;
 		else
 		{
-			while (spot->next)
-				spot = spot->next;
+			while (Current->next)
+				Current = Current->next;
 		}
-		if (spot->next)
-			printf("Value checked at index [%lu] = [%i]\n", spot->index, spot->n);
+		if (Current->next)
+			printf("Value checked at index [%lu] = [%i]\n", Current->index, Current->n);
 	}
 
-	printf("Value found between indexes [%lu] and [%lu]\n", spot->index,
-	       spot->index);
+	printf("Value found between indexes [%lu] and [%lu]\n", Previous->index,
+	       Current->index);
 
-	spot = prev;
-	while (spot && spot->n < value)
+	Current = Previous;
+	while (Current && Current->n < value)
 	{
-		printf("Value checked at index [%lu] = [%i]\n", spot->index, spot->n);
-		if (spot->next)
-			spot = spot->next;
+		printf("Value checked at index [%lu] = [%i]\n", Current->index, Current->n);
+		if (Current->next)
+			Current = Current->next;
 		else
 			return (NULL);
 	}
 
-	if (spot && spot->n == value)
+	if (Current && Current->n == value)
 	{
-		printf("Value checked at index [%lu] = [%i]\n", spot->index, spot->n);
-		return (spot);
+		printf("Value checked at index [%lu] = [%i]\n", Current->index, Current->n);
+		return (Current);
 	}
 
 	return (NULL);
